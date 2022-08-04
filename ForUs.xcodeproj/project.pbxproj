@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8804724E289C186600A87E42 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804724D289C186600A87E42 /* TableViewCell.swift */; };
 		8898CE05289ACCAA001F69C7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898CE04289ACCAA001F69C7 /* APICaller.swift */; };
 		88B878FB2899A9550070F014 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B878FA2899A9550070F014 /* SignUpViewController.swift */; };
 		88B878FD2899A96A0070F014 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B878FC2899A96A0070F014 /* LogInViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8804724D289C186600A87E42 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8898CE04289ACCAA001F69C7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		88B878FA2899A9550070F014 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		88B878FC2899A96A0070F014 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		88B879002899A9890070F014 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8804724D289C186600A87E42 /* TableViewCell.swift */,
 				88B879012899CAC10070F014 /* ViewController.swift */,
 				88B878FA2899A9550070F014 /* SignUpViewController.swift */,
 				88B878FE2899A97E0070F014 /* HomeViewController.swift */,
@@ -203,6 +206,7 @@
 				E411A6D7289AEBAE00B94859 /* ThirdConvoViewController.swift in Sources */,
 				88B878FF2899A97E0070F014 /* HomeViewController.swift in Sources */,
 				88B878FB2899A9550070F014 /* SignUpViewController.swift in Sources */,
+				8804724E289C186600A87E42 /* TableViewCell.swift in Sources */,
 				E42BD071289B8C3100A9590A /* JiaViewController.swift in Sources */,
 				8898CE05289ACCAA001F69C7 /* APICaller.swift in Sources */,
 			);

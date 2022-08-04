@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="FJg-E2-RR4" customClass="ThirdConvoViewController" customModule="ForUs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KGy-AO-soH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC5-T9-odx">
@@ -265,7 +265,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                         <connections>
                                             <action selector="logInPressed:" destination="W8l-Oc-Hbi" eventType="touchUpInside" id="Pv8-Cb-5iq"/>
-                                            <segue destination="5pD-Sw-UOw" kind="show" id="Egz-ue-rUx"/>
+                                            <segue destination="ihD-Xu-DUk" kind="show" id="TF0-eS-hOT"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C10-VI-2ld">
@@ -446,7 +446,7 @@
             <objects>
                 <viewController id="4yh-bu-lkF" customClass="FirstConvoViewController" customModule="ForUs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2NE-sU-6hr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUT-XQ-lWw">
@@ -499,7 +499,7 @@
             <objects>
                 <viewController id="kuN-l2-4Yb" customClass="SecondConvoViewController" customModule="ForUs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PMf-YC-oeX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcq-Wt-oo1">
@@ -610,7 +610,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
                                             <action selector="signUpPressed:" destination="Gon-ke-Tpc" eventType="touchUpInside" id="Bnm-Cw-CMa"/>
-                                            <segue destination="5pD-Sw-UOw" kind="show" id="6gr-rp-82K"/>
+                                            <segue destination="ihD-Xu-DUk" kind="show" id="5Og-6P-5zi"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNz-cU-GRt">
@@ -670,7 +670,7 @@
             <objects>
                 <viewController id="slz-SL-5KL" customClass="ConversationCornerViewController" customModule="ForUs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSo-WQ-pHL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3t-00-M0O">
@@ -835,9 +835,53 @@
             </objects>
             <point key="canvasLocation" x="2701" y="-335"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Rbi-lK-aDd">
+            <objects>
+                <viewController id="ihD-Xu-DUk" customClass="HomeViewController" customModule="ForUs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tvv-f9-cBp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxW-n2-lxN">
+                                <rect key="frame" x="77" y="81" width="98" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Stg-FY-0q0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xbm-ka-Qf7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZx-jo-E7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2587" y="1319"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2E0-2W-fK5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0rY-Wj-2t7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8yS-HM-TEd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z0d-8S-ZoA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ihD-Xu-DUk" kind="relationship" relationship="rootViewController" id="ddY-uq-W5x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cq3-AN-PKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="1319"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Egz-ue-rUx"/>
+        <segue reference="TF0-eS-hOT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2022-08-03 at 11.37.13 AM" width="744" height="756"/>
@@ -845,6 +889,9 @@
         <image name="Screen Shot 2022-08-03 at 2.24.59 PM" width="754" height="338"/>
         <image name="Screen Shot 2022-08-03 at 2.25.59 PM" width="682" height="640"/>
         <image name="Screen Shot 2022-08-04 at 10.48.28 AM" width="1022" height="870"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
