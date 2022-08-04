@@ -11,6 +11,7 @@ class ConversationCornerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Let's Talk"
 
         // Do any additional setup after loading the view.
     }

@@ -11,6 +11,7 @@ class AboutUsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "About Us"
 
         // Do any additional setup after loading the view.
     }

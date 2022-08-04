@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        logInButton.layer.borderWidth = 2
+        signUpButton.layer.borderWidth = 2
+        logInButton.layer.cornerRadius = 5
+        signUpButton.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
     }

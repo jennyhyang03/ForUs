@@ -53,9 +53,11 @@ class newsTableViewCell:
     
     private let newsImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .secondarySystemBackground
+        imageView.backgroundColor = .clear
+        
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        
         return imageView
         
         
@@ -66,6 +68,7 @@ class newsTableViewCell:
             
             
             super.init(style: style, reuseIdentifier: reuseIdentifier)
+            contentView.backgroundColor = .clear
             
             contentView.addSubview(newsTitleLabel)
             contentView.addSubview(sourceLabel)
@@ -86,8 +89,8 @@ class newsTableViewCell:
         newsTitleLabel.frame = CGRect(x: 10, y: 0, width: contentView.frame.size.width - 170, height: contentView.frame.size.height/2)
         
         sourceLabel.frame = CGRect(x: 10, y: 70, width:contentView.frame.size.width - 170, height: contentView.frame.size.height/2 )
-        subtitleLabel.frame = CGRect(x: 10, y: 150, width: contentView.frame.size.width - 170, height: contentView.frame.size.height/2)
-        newsImageView.frame = CGRect(x: contentView.frame.size.width - 150, y: 5, width: 190, height: contentView.frame.size.height - 10)
+        subtitleLabel.frame = CGRect(x: 10, y: 150, width: contentView.frame.size.width - 200, height: contentView.frame.size.height/2)
+        newsImageView.frame = CGRect(x: contentView.frame.size.width - 150, y: 5, width: 190, height: contentView.frame.size.height - 40)
         
       
         
@@ -124,26 +127,26 @@ class newsTableViewCell:
                 }
             }.resume()
         
-    }3
+    }
     }
     
     func checkSource(sourceToCheck: String) -> String{
         
-        var myCheckSource = sourceToCheck
+        let myCheckSource = sourceToCheck
         var myReturn = ""
         
-        if (myCheckSource == "The New York Times") || (myCheckSource == "The Wall Street Journal" ) || (myCheckSource == "The Washington Post") || (myCheckSource == "BBC") || (myCheckSource == "The Economist") || (myCheckSource == "The New Yorker") || (myCheckSource == "The Associated Press" )  || ( myCheckSource == "Aljazeera") || (myCheckSource == "Reuters" ) || (myCheckSource == "Bloomberg News") || (myCheckSource == "Politico" ) ||  (myCheckSource == "The Atlantic") ||  (myCheckSource == "Associated Press") || (myCheckSource == "CNN"){
+        if (myCheckSource == "The New York Times") || (myCheckSource == "The Wall Street Journal" ) || (myCheckSource == "The Washington Post") || (myCheckSource == "BBC") || (myCheckSource == "The Economist") || (myCheckSource == "The New Yorker") || (myCheckSource == "The Associated Press" )  || ( myCheckSource == "Aljazeera") || (myCheckSource == "Reuters" ) || (myCheckSource == "Bloomberg News") || (myCheckSource == "Politico" ) ||  (myCheckSource == "The Atlantic") ||  (myCheckSource == "Associated Press") || (myCheckSource == "CNN") || (myCheckSource == "Vanity Fair") || (myCheckSource == "CNBC"){
             
-            myReturn = "ForUs has marked this source credible"
+            myReturn = "ForUs has marked this source credible 🚀"
         }
         
-        else if myCheckSource.contains( "Fox News") {
+        else if myCheckSource.contains( "Fox News")  || (myCheckSource == "WND.com") {
             
-            myReturn = "ForUs has marked this source not credible"
+            myReturn = "ForUs has marked this source not credible 🚩"
         }
         else{
             
-            myReturn = "ForUs has not determined this source's credibility"
+            myReturn = "ForUs has not determined this source's credibility 🤔"
         }
         return myReturn
         

@@ -7,9 +7,9 @@
 
 import UIKit
 import SafariServices
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
  
- 
+ private let searchVC = UISearchController(searchResultsController: nil)
 private let tableView: UITableView = {
             let table = UITableView()
             table.register(newsTableViewCell.self, forCellReuseIdentifier: newsTableViewCell.identifier)
@@ -24,8 +24,11 @@ private let tableView: UITableView = {
         super.viewDidLoad()
         title = "News"
         view.addSubview(tableView)
+        tableView.backgroundColor = .clear
         tableView.delegate = self
         tableView.dataSource = self
+        createSearchBar()
+        
         APICaller.shared.getTopStories{ [weak self] result in
             switch result{
                 
@@ -51,6 +54,12 @@ private let tableView: UITableView = {
             }
         }
         // Do any additional setup after loading the view.
+    }
+    
+    func createSearchBar(){
+        navigationItem.searchController = searchVC
+        searchVC.searchBar.delegate = self
+        
     }
     
      override func viewDidLayoutSubviews() {
@@ -82,6 +91,8 @@ private let tableView: UITableView = {
         print("returning cell!")
         return cell
     }
+    
+    //USE THIS:!!!
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
         tableView.deselectRow(at: indexPath, animated: true)
@@ -96,7 +107,7 @@ private let tableView: UITableView = {
     
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
+        return 300
     }
     func checkSource(sourceToCheck: String) ->  String  {
         
@@ -120,7 +131,42 @@ private let tableView: UITableView = {
         
         
     }
+       
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text, !text.isEmpty else{
+            
+            return
         }
+        APICaller.shared.search(with: text){[weak self] result in
+        switch result{
+            
+        case .success(let articles):
+            self?.articles = articles
+            self?.viewModels = articles.compactMap({
+                newsTableViewCellViewModel(title: $0.title, subtitle: $0.description ?? "No Description",
+                                           imageURL: URL(string: $0.urlToImage ?? ""), mySource: $0.source.name
+                )
+            })
+            print("Gping!")
+
+            DispatchQueue.main.async{
+                
+               self?.tableView.reloadData()
+                print("it works!")
+                self?.searchVC.dismiss(animated: true, completion: nil)
+            }
+            
+        case .failure(let error):
+            print (" \(error)You have an error")
+            
+        
+        }
+            
+            
+        }
+        print(text)
+    }
+}
 
 
 
