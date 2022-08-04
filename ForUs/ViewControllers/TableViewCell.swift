@@ -124,7 +124,7 @@ class newsTableViewCell:
                 }
             }.resume()
         
-    }
+    }3
     }
     
     func checkSource(sourceToCheck: String) -> String{
