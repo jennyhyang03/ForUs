@@ -12,7 +12,14 @@
 		88B878FD2899A96A0070F014 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B878FC2899A96A0070F014 /* LogInViewController.swift */; };
 		88B878FF2899A97E0070F014 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B878FE2899A97E0070F014 /* HomeViewController.swift */; };
 		88B879022899CAC10070F014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B879012899CAC10070F014 /* ViewController.swift */; };
-		88B879042899CEA50070F014 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88B879032899CEA40070F014 /* GoogleService-Info.plist */; };
+		E411A6D1289AE99C00B94859 /* ConversationCornerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411A6D0289AE99C00B94859 /* ConversationCornerViewController.swift */; };
+		E411A6D3289AEB6D00B94859 /* FirstConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411A6D2289AEB6D00B94859 /* FirstConvoViewController.swift */; };
+		E411A6D5289AEB8B00B94859 /* SecondConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411A6D4289AEB8B00B94859 /* SecondConvoViewController.swift */; };
+		E411A6D7289AEBAE00B94859 /* ThirdConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411A6D6289AEBAE00B94859 /* ThirdConvoViewController.swift */; };
+		E411A6D9289AEBD300B94859 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411A6D8289AEBD300B94859 /* SupportViewController.swift */; };
+		E411A6DB289AEBF900B94859 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411A6DA289AEBF900B94859 /* AboutUsViewController.swift */; };
+		E42BD071289B8C3100A9590A /* JiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42BD070289B8C3100A9590A /* JiaViewController.swift */; };
+		E42BD073289B8C3F00A9590A /* JennyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42BD072289B8C3F00A9590A /* JennyViewController.swift */; };
 		E43D53DE2899A46200059E57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D53DD2899A46200059E57 /* AppDelegate.swift */; };
 		E43D53E02899A46200059E57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D53DF2899A46200059E57 /* SceneDelegate.swift */; };
 		E43D53E52899A46200059E57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43D53E32899A46200059E57 /* Main.storyboard */; };
@@ -27,7 +34,14 @@
 		88B878FC2899A96A0070F014 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		88B878FE2899A97E0070F014 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		88B879012899CAC10070F014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		88B879032899CEA40070F014 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E411A6D0289AE99C00B94859 /* ConversationCornerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCornerViewController.swift; sourceTree = "<group>"; };
+		E411A6D2289AEB6D00B94859 /* FirstConvoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstConvoViewController.swift; sourceTree = "<group>"; };
+		E411A6D4289AEB8B00B94859 /* SecondConvoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondConvoViewController.swift; sourceTree = "<group>"; };
+		E411A6D6289AEBAE00B94859 /* ThirdConvoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdConvoViewController.swift; sourceTree = "<group>"; };
+		E411A6D8289AEBD300B94859 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		E411A6DA289AEBF900B94859 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		E42BD070289B8C3100A9590A /* JiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaViewController.swift; sourceTree = "<group>"; };
+		E42BD072289B8C3F00A9590A /* JennyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JennyViewController.swift; sourceTree = "<group>"; };
 		E43D53DA2899A46200059E57 /* ForUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43D53DD2899A46200059E57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E43D53DF2899A46200059E57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,11 +96,18 @@
 				E43D53DD2899A46200059E57 /* AppDelegate.swift */,
 				E43D53DF2899A46200059E57 /* SceneDelegate.swift */,
 				E43D53E32899A46200059E57 /* Main.storyboard */,
+				E42BD070289B8C3100A9590A /* JiaViewController.swift */,
+				E42BD072289B8C3F00A9590A /* JennyViewController.swift */,
+				E411A6DA289AEBF900B94859 /* AboutUsViewController.swift */,
+				E411A6D8289AEBD300B94859 /* SupportViewController.swift */,
+				E411A6D6289AEBAE00B94859 /* ThirdConvoViewController.swift */,
+				E411A6D4289AEB8B00B94859 /* SecondConvoViewController.swift */,
+				E411A6D2289AEB6D00B94859 /* FirstConvoViewController.swift */,
 				E43D53E92899A46400059E57 /* Assets.xcassets */,
 				E43D53EB2899A46400059E57 /* LaunchScreen.storyboard */,
+				E411A6D0289AE99C00B94859 /* ConversationCornerViewController.swift */,
 				E43D53EE2899A46400059E57 /* Info.plist */,
 				E43D53E62899A46200059E57 /* ForUs.xcdatamodeld */,
-				88B879032899CEA40070F014 /* GoogleService-Info.plist */,
 				88B879002899A9890070F014 /* ViewControllers */,
 				8898CE04289ACCAA001F69C7 /* APICaller.swift */,
 			);
@@ -156,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43D53ED2899A46400059E57 /* LaunchScreen.storyboard in Resources */,
-				88B879042899CEA50070F014 /* GoogleService-Info.plist in Resources */,
 				E43D53EA2899A46400059E57 /* Assets.xcassets in Resources */,
 				E43D53E52899A46200059E57 /* Main.storyboard in Resources */,
 			);
@@ -170,12 +190,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43D53E82899A46200059E57 /* ForUs.xcdatamodeld in Sources */,
+				E411A6D3289AEB6D00B94859 /* FirstConvoViewController.swift in Sources */,
+				E411A6D9289AEBD300B94859 /* SupportViewController.swift in Sources */,
 				88B878FD2899A96A0070F014 /* LogInViewController.swift in Sources */,
+				E411A6DB289AEBF900B94859 /* AboutUsViewController.swift in Sources */,
+				E411A6D5289AEB8B00B94859 /* SecondConvoViewController.swift in Sources */,
 				E43D53DE2899A46200059E57 /* AppDelegate.swift in Sources */,
+				E42BD073289B8C3F00A9590A /* JennyViewController.swift in Sources */,
 				E43D53E02899A46200059E57 /* SceneDelegate.swift in Sources */,
+				E411A6D1289AE99C00B94859 /* ConversationCornerViewController.swift in Sources */,
 				88B879022899CAC10070F014 /* ViewController.swift in Sources */,
+				E411A6D7289AEBAE00B94859 /* ThirdConvoViewController.swift in Sources */,
 				88B878FF2899A97E0070F014 /* HomeViewController.swift in Sources */,
 				88B878FB2899A9550070F014 /* SignUpViewController.swift in Sources */,
+				E42BD071289B8C3100A9590A /* JiaViewController.swift in Sources */,
 				8898CE05289ACCAA001F69C7 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
